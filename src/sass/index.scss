@@ -1,7 +1,241 @@
+//网页导航
 #header {
-	width: 1024px;
-	margin: 0 auto;
-	height: 500px;
-	background: #000;
-	color: #fff;
+	width: auto;
+	height: 89px;
+	background: url(../imgs/header_bg.gif)repeat-x;
+	div{
+	    width:1100px;
+	    height:89px;
+	    margin:0 auto;
+	    position:relative;
+        	h1 a{
+                    display:inline-block;
+                    height:88px;
+                    width:250px;
+                    position:absolute;
+                    left:(1100-250)/2+px;
+                    z-index:999;
+                }
+        	.head_t{height:44px;}
+            .head_t a{
+                float:left;
+                line-height:44px;
+                font-size:14px;
+                color:black;
+                padding:0 15px;
+                }
+            .head_t>a:hover{
+                    color:#54dde7;
+                }
+            .head_t p a{
+                float:right;
+                line-height:44px;
+                font-size:14px;
+                color:#5b5b5b;
+                background:url(../imgs/buycar.png) no-repeat left center;
+                padding-left:30px;
+                padding-right:0;
+            }
+          
+            #mouth{
+                color:#ff7800;
+            }
+        	.head_b{
+        	    height:45px;
+        	    width:1100px;
+        	    margin:0 auto;
+        	    position:absolute;
+        	    top:44px;
+        	}
+        	.head_1{
+        	    float:left;
+                height:45px;
+                li a{color:black;}
+                li:first-child{padding:0;}
+                .head_c{
+                    display:block;
+                    width:39px;
+                    height:43px;
+                    background:url(../imgs/icon.png) no-repeat;
+                    border-left:1px solid #f0f0f0;;
+                     a{
+                         display: block;
+                          width:39px;
+                          height:43px;
+                     }
+                }
+                .head_c:hover{background-color: #f6f6f6;}
+                 li a:hover{
+                    color:#54dde7;
+                }
+                
+            }
+            .head_1>li{
+                    float:left;
+                    padding:0 20px;
+                    line-height:45px;
+                    font-size: 14px;
+                    border-right:1px solid #f0f0f0;
+                }
+            .search{
+                float:right;
+                li{
+                  padding:0 20px;
+                  line-height:45px; 
+                  font-size: 14px;
+                  border-left:1px solid #f0f0f0;
+                  float:left;
+                }
+                li a{
+                    color:black;
+                }
+                li a:hover{
+                    color:#54dde7;
+                }
+                form{
+                    float:left;
+                    border:1px solid #f0f0f0;
+                    
+                    input{
+                        height:42px;
+                        border:0;
+                        width:200px;
+                        float:left;
+                        padding-left:10px;
+                    }
+                    a{
+                        display:block;
+                        width:43px;
+                        height:42px;
+                        border:0;
+                        float:left;
+                        background:url(../imgs/search.png) no-repeat center center;
+                    }
+                }
+            }
+            
+	}
+    //隐藏导航
+	.nav_s{
+	    width:817px;
+	    height:504px;
+	    position:absolute;
+	    left:314px;
+	    top:45px;
+	    border:1px solid #f1f1f1;
+        display: none;
+        background: white;
+	}
+	.nav_1{
+	    display:block;
+	    height:94px;
+	    width:815px;
+	    border-bottom:1px solid #f1f1f1;
+	    background:url(../imgs/diagonalMaskWhiteBg.gif) repeat ;
+	    background-color:#e5e5e5;
+	    display:flex;
+	    justify-content: space-around;
+	    align-items: center;
+	    margin-bottom: 15px;
+	}
+	.nav_1 i{
+	    display:flex;
+	    flex-direction: column;
+	    align-items: center;
+	    font-size: 16px;
+	    line-height: 27px;
+	    i{color:black;}
+	}
+	.nav_1 i:nth-child(1) span{color: #f4142b;}
+	.nav_1 i:nth-child(1) i:hover{color: #f4142b;}
+	.nav_1 i:nth-child(2) span{color: #78dd00;}
+    .nav_1 i:nth-child(2) i:hover{color: #78dd00;}
+    .nav_1 i:nth-child(3) span{color: #ff6c00; }
+    .nav_1 i:nth-child(3) i:hover{color: #78dd00;}
+    .nav_1 i:nth-child(4) span{color: #ff48b4;}
+    .nav_1 i:nth-child(4) i:hover{color: #ff48b4;}
+    .nav_2{
+    text-align: center;
+    line-height: 16px;
+    background: white;}
+    .nav_2>a{
+        font-size: 14px;
+        font-size: 14px;
+        color: #00cccc!important;
+        margin: 0 11px;  
+    }
+    .nav_2 a:hover{background: #00cccc;color: white!important;}
+    #nav_block:hover .nav_s{display: block;}
+    .nav_3{
+        padding: 0 20px;
+        background: white;
+        li{list-style-image:url(../imgs/1.png);
+        list-style-position: inside;
+        font-size: 13px;
+        color: #5c5c5c;}
+       
+    }
+    .nav_3 a{font-size: 12px;padding: 0 8px;}
+    .nav_3>li:first-child{
+        a{
+        display:inline-block;
+        width: 18px ;
+        height: 18px;
+        border-radius:50%;
+        padding: 0;
+        margin: 0 4px;
+        line-height: 40px;
+        } 
+    }
+    .nav_3 li{line-height: 42px;}
+     .nav_3 li:nth-child(1){line-height: 44px;}
+    .nav_3 li:nth-child(2){line-height: 33px;}
+     #nav_3a a:nth-child(2){background-color: #ff0087;}
+     #nav_3a a:nth-child(3){background-color: #ff0000;}
+     #nav_3a a:nth-child(4){background-color: #ff8100;}
+     #nav_3a a:nth-child(5){background-color: #f4cd00;}
+     #nav_3a a:nth-child(6){background-color: #fffe09;}
+     #nav_3a a:nth-child(7){background-color: #00e405;}
+     #nav_3a a:nth-child(8){background-color: #714b25;}
+     #nav_3a a:nth-child(9){background-color: #a40cf5;} 
+     #nav_3a a:nth-child(10){background-color: #0200fb;}
+     #nav_3a a:nth-child(11){background-color: #04d4f5;}
+     #nav_3a a:nth-child(12){background-color: #ffffff;border: 1px solid #d2d2d2;}
+     #nav_3a a:nth-child(13){background-color: #818181;}
+     #nav_3a a:nth-child(14){background-color: #000000;}
+    .nav_4{
+        width: 815px;
+        height: 55px;
+        border-top: 1px solid #f1f1f1;
+        background: url(../imgs/diagonalMaskWhiteBg.gif)repeat;
+        background-color:#e5e5e5;
+        text-align: center;
+        line-height: 55px;
+        a{font-size: 16px;color: black;}
+        a:hover{color: #00cccc;}
+    }
 }
+////轮播图
+#banner{
+    width: 100%;
+    height: 525px;
+    margin: 0 auto;
+    //overflow: hidden;
+    position: relative;
+//  text-align: center;
+    img{
+        width:1920px;
+        height:525px;
+        margin:0 -27%;
+        position: absolute;
+        top:0;
+        left: 0;
+        }
+    
+   .prev{
+       width: 50px;
+       height: 65px;
+       background: red;
+}
+}
+
